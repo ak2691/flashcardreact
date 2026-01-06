@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
+import Matchmaking from './components/ui/Matchmaking';
 import Home from './components/ui/Home';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
+        <Route path="/matchmaking" element={<Matchmaking />} />
       </Routes>
 
     </>
